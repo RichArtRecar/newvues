@@ -53,6 +53,7 @@
 
 
                 <v-card-actions class="grey darken-3 justify-center">
+
                     &copy;2018 — <strong>First Time Mama Blog</strong>
                 </v-card-actions>
             </v-card>
