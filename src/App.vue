@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-toolbar class="cyan lighten-1" fixed app scroll-threshold="1" scroll-off-screen="true">
+        <v-toolbar pb-5 class="cyan lighten-1" fixed app scroll-threshold="1" scroll-off-screen="true">
             <v-toolbar-side-icon @click.stop="sideNav = !sideNav"></v-toolbar-side-icon>
             <v-toolbar-title>FTMB</v-toolbar-title>
             <v-spacer></v-spacer>
@@ -18,6 +18,11 @@
         <v-navigation-drawer class="cyan lighten-4
 " v-model="sideNav" :mini-variant="mini" absolute temporary>
 
+
+            <v-btn fab outline icon="true" color="teal">
+                <font-awesome-icon @click.stop="sideNav = !sideNav" icon="times" rotation="180" size="1x"/>
+            </v-btn>
+
         </v-navigation-drawer>
 
         <main>
@@ -26,10 +31,12 @@
         <v-footer
                 dark
                 height="auto"
+                fixed="true"
+
         >
             <v-card
                     class="flex"
-                    flat
+
                     tile
             >
                 <v-card-title class="teal">
@@ -42,13 +49,13 @@
 
                 </v-card-title>
                 <v-btn fab outline icon="true" color="teal">
-                        <font-awesome-icon :icon="[ 'fab', 'twitter' ]" size="2x"></font-awesome-icon>
+                    <font-awesome-icon left :icon="[ 'fab', 'twitter' ]" size="2x"></font-awesome-icon>
                 </v-btn>
                 <v-btn fab outline icon="true" color="teal">
-                    <font-awesome-icon :icon="[ 'fab', 'facebook-f' ]" size="2x"></font-awesome-icon>
+                    <font-awesome-icon left :icon="[ 'fab', 'facebook-f' ]" size="2x"></font-awesome-icon>
                 </v-btn>
                 <v-btn fab outline icon="true" color="teal">
-                    <font-awesome-icon :icon="[ 'fab', 'instagram' ]" size="2x"></font-awesome-icon>
+                    <font-awesome-icon left :icon="[ 'fab', 'instagram' ]" size="2x"></font-awesome-icon>
                 </v-btn>
 
 
