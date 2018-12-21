@@ -3,3 +3,5 @@
     <h1>This is an about page</h1>
   </div>
 </template>
+
+<style src ="./styles/aboutstyles.css" scoped></style>
