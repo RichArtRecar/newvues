@@ -12,7 +12,8 @@ import {
     faSun, faMoon, faStar
 } from '@fortawesome/free-solid-svg-icons';
 import { faJs, faVuejs, faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome';
+import './stylus/main.styl';
 
 library.add(
     faCoffee, faSpinner, faWrench, faAmbulance, faSquare,
