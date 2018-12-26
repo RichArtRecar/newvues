@@ -1,9 +1,10 @@
-import Vue from 'vue'
-import './plugins/vuetify'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import './registerServiceWorker'
+import Vue from 'vue';
+import './plugins/vuetify';
+import App from './App.vue';
+import MainNav from './components/MainNav.vue';
+import router from './router';
+import store from './store';
+import './registerServiceWorker';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
     faCoffee, faSpinner, faWrench, faAmbulance, faEdit, faCircle, faCheck, faChessQueen,
@@ -26,15 +27,16 @@ library.add(
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.component('font-awesome-layers', FontAwesomeLayers);
 Vue.component('font-awesome-layers-text', FontAwesomeLayersText);
+Vue.component('MainNav', MainNav);
 
 
 
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');
 
