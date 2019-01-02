@@ -51,8 +51,13 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-    router-link
+        
+       a
         text-decoration: none
+        font-size: 1.5rem 
+
+        
+
 
     
 </style>

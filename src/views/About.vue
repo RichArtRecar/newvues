@@ -4,4 +4,13 @@
   </div>
 </template>
 
-<style src ="./styles/aboutstyles.css" scoped></style>
+<script>
+export default {
+  
+}
+</script>
+
+
+<style lang="stylus" scoped>
+ 
+</style>
