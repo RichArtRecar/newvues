@@ -4,7 +4,7 @@
              <v-navigation-drawer class="cyan lighten-4
 " v-model="sideNav" :mini-variant="mini" absolute temporary>
             <v-btn fab outline icon="true" color="teal">
-                <font-awesome-icon @click.stop="sideNav = !sideNav" icon="times" rotation="180" size="2x"/>
+                <font-awesome-icon @click.stop="sideNav = !sideNav" icon="times" rotation="180" size="1.50x"/>
             </v-btn>
             <v-list>
                 <v-list-tile>
@@ -25,8 +25,11 @@
             <v-toolbar-title>FTMB</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-xs-only">
-                <v-btn flat>
+                <v-btn class="link" flat>
                     <router-link to="/about">About</router-link>
+                </v-btn>
+                <v-btn flat>
+                    <router-link to="/contact">Contact</router-link>
                 </v-btn>
             </v-toolbar-items>
         </v-toolbar>
@@ -45,11 +48,12 @@ export default {
         }
 
 };
-
-   
 </script>
 
 <style lang="stylus" scoped>
+    router-link
+        text-decoration: none
 
+    
 </style>
 
