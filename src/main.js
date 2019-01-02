@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import './plugins/vuetify';
 import App from './App.vue';
-import MainNav from './components/MainNav.vue';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
@@ -27,7 +26,8 @@ library.add(
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.component('font-awesome-layers', FontAwesomeLayers);
 Vue.component('font-awesome-layers-text', FontAwesomeLayersText);
-Vue.component('MainNav', MainNav);
+Vue.component("MainNav", require('./components/MainNav.vue').default);
+Vue.component("footer1", require('./components/footer.vue').default);
 
 
 
