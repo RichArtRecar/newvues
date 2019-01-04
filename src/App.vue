@@ -1,6 +1,8 @@
 <template>
     <v-app>
         <MainNav></MainNav>
+        <parallax></parallax>
+        <v-spacer></v-spacer>
         <main>
            <router-view/>
         </main>
@@ -11,3 +13,9 @@
 <script>
  
 </script>
+
+<style lang="stylus" scoped>
+   #app
+       background-color: rgba(240, 240, 240, 0.15)
+</style>
+>

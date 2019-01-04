@@ -28,6 +28,7 @@ Vue.component('font-awesome-layers', FontAwesomeLayers);
 Vue.component('font-awesome-layers-text', FontAwesomeLayersText);
 Vue.component("MainNav", require('./components/MainNav.vue').default);
 Vue.component("footer1", require('./components/footer.vue').default);
+Vue.component("parallax", require('./components/parallax.vue').default);
 
 
 
